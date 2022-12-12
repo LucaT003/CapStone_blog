@@ -1,6 +1,6 @@
 import '../style/Login.css'
 import { Link } from 'react-router-dom';
-import {React, useState} from 'react';
+import React, {useState} from 'react';
 
 const Login = (props) => {
 
@@ -34,7 +34,7 @@ const Login = (props) => {
                 <input onChange={(e) => setPass(e.target.value)} value={pass} type="password" className='loginInput' placeholder='Inserisci la tua password...'/>
                 <button className='loginButton'>Login</button>        
             </form>
-            <Link to='/reg' ><button className='loginRegisterButton'  onClick={() => props.onFormSwitch('signup')}>Register</button></Link>
+            <Link to='/reg' ><button className='loginRegisterButton'>Register</button></Link>
         </div>
     )
 }
