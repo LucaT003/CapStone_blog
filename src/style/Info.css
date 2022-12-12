@@ -1,0 +1,58 @@
+.infoPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    font-size: 3vw;
+    font-family: 'Lora', serif;
+    
+}
+
+.infoImg {
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 2vw;
+}
+
+.cardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    font-family: 'Lora', serif;
+    line-height: 2rem;
+}
+
+.infoSubmit {
+    right: 50px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.textInfo {
+    right: 50px;
+    padding: 10px;
+    border: rgb(171, 171, 171) 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
