@@ -1,3 +1,23 @@
-.home {
+
+
+   
+ .HomeH{
     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.home{
+    display: flex;
+    flex-flow: column wrap;
+}
+@media screen and (min-width: 776px){
+
+    .home{
+    display: flex;
+    flex-direction: column nowrap;
+}
+
+
 }

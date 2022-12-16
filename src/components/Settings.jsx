@@ -8,8 +8,7 @@ export default function Settings() {
         <div className='settings'>
             <div className='settingsWrapper'>
                 <div className='settingsTitle'>
-                    <span className='settingsUpdateTitle'>Aggiorna il tuo Account</span>
-                    <span className='settingsDeleteTitle'>Elimina Account</span>
+                    <span className='settingsUpdateTitle'>Il tuo Account</span>
                 </div>
                 <form className="settingsForm">
                     <label>Immagine Profilo</label>
@@ -23,13 +22,10 @@ export default function Settings() {
                        </label>
                        <input type="file" id='fileInput' style={{display:"none"}} />
                     </div>
-                    <label>Nome utente</label>
+                    <label>Username</label>
                     <input type="text" placeholder="Jim"/>
                     <label>Email</label>
                     <input type="email" placeholder="jim@gmail.com"/>
-                    <label>Password</label>
-                    <input type="password"/>
-                    <button className='settingsSubmit'>Aggiorna</button>
                 </form>
             </div>
             <Sidebar/>
