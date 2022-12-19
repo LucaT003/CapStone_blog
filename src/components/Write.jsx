@@ -1,5 +1,5 @@
 import '../style/Write.css'
-import React , { Component}  from 'react';
+import React from 'react';
 
 export default function Write() {
     return (

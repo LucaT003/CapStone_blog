@@ -1,5 +1,6 @@
 .settings {
     display: flex;
+    flex-flow: row;
 }
 
 .settingsWrapper {
@@ -61,12 +62,8 @@
     margin-top: 20px;
 }
 
-.settingsForm > input {
+.setp{
     color: gray;
-    margin: 10px 0;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid lightgray;
 }
 
 .settingsSubmit {
@@ -79,4 +76,17 @@
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.logoutbutton {
+    margin-top: 2rem;
+    width: 5rem;
+    top: 60px;
+    right: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
 }

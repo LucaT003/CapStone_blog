@@ -1,8 +1,12 @@
 import '../style/Register.css'
 import React , { useState}  from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { signAction } from '../redux/actions';
 
 export default function Register() {
+    const dispatch = useDispatch()
+    const navigate = useNavigate('')
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [username, setUsername] = useState('');
@@ -22,7 +26,7 @@ export default function Register() {
 
         fetch(`http://localhost:8080/users/?username=${username}&email=${email}&password=${pass}`, options)
         .then(res => res.json())
-        .then(res => console.log(res))
+        .then(res => {console.log(res); dispatch(signAction({email: email}))})
 }
     return (
         <div className='register'>
@@ -52,7 +56,7 @@ export default function Register() {
                 className='registerInput' 
                 placeholder='Inserisci password...'
                 />
-                <button className='registerButton'>Register</button>        
+                <button className='registerButton' onClick={()=> {navigate('/regs')}}>Register</button>        
             </form>
             <Link to='/log'><button className='registerLoginButton'>Login</button></Link>
         </div>

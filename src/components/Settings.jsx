@@ -1,10 +1,27 @@
 import '../style/Settings.css'
 import Sidebar from './Sidebar'
-import React , { Component}  from 'react';
+import React from 'react';
 import c from '../img/Fprofilo.jpg';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { logoutAction } from '../redux/actions';
 
 export default function Settings() {
+
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+  
+    
+    const loggedUser = useSelector(state => state.loggedUser.state.username);
+    const email = useSelector(state => state.loggedUser.state.email);
+    
+          const logout = () => {
+              dispatch(logoutAction())
+            };
+
     return (
+        <>
         <div className='settings'>
             <div className='settingsWrapper'>
                 <div className='settingsTitle'>
@@ -23,13 +40,18 @@ export default function Settings() {
                        <input type="file" id='fileInput' style={{display:"none"}} />
                     </div>
                     <label>Username</label>
-                    <input type="text" placeholder="Jim"/>
+                    <p className='setp'>{loggedUser}</p>
                     <label>Email</label>
-                    <input type="email" placeholder="jim@gmail.com"/>
+                    <p className='setp'>{email}</p>
+                    <button  className='logoutbutton' onClick={()=> {logout(); navigate('/')}} >Logout</button>
                 </form>
+                
             </div>
             <Sidebar/>
+            
         </div>
+        
+        </>
     )
 }
 

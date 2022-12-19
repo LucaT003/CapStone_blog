@@ -77,3 +77,14 @@
 .linkNav:hover {
     color: rgb(199, 199, 199);
 }
+
+@media screen and (max-width: 662px){
+
+    .top{
+    display: flex;
+    width: 659px;
+    
+}
+
+
+}

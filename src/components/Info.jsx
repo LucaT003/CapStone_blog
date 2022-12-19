@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import '../style/Info.css'
-import React , { Component}  from 'react';
+import React from 'react';
 import p from '../img/infofaImg.webp'
 
 const Info = () => {

@@ -53,3 +53,13 @@
     color: white;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 662px){
+
+    .register{
+    display: flex;
+    width: 659px;
+    height: 900px;
+    
+}
+}

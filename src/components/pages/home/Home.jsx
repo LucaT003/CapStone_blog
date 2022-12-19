@@ -2,7 +2,7 @@ import '../../../style/Home.css'
 import Header from '../../Header'
 import Posts from '../../Posts'
 import Sidebar from '../../Sidebar'
-import React , { Component}  from 'react';
+import React from 'react';
 
 export default function Home() {
     return (
